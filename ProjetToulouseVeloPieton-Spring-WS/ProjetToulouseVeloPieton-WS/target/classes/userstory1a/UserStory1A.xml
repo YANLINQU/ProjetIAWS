@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Stations xmlns="http://iaws/ws/contractfirst/projet" ville="Toulouse">
+    <Stations_Avec_Velos>
+        <station>
+            <adresse>AVENUE EDOUARD BELIN ANGLE AV ROCHE</adresse>
+            <available_bickes>3</available_bickes>
+            <name>00223 - ENAC</name>
+        </station>
+        <station>
+            <adresse>RUE GONIN ANGLE GENIN 31000 TOULOUSE</adresse>
+            <available_bickes>16</available_bickes>
+            <name>00267 - GONIN</name>
+        </station>
+        <station>
+            <adresse>9 RUE LE DORMEUR</adresse>
+            <available_bickes>2</available_bickes>
+            <name>00211 - LE DORMEUR/ LA TERRASSE</name>
+        </station>
+    </Stations_Avec_Velos>
+</Stations>

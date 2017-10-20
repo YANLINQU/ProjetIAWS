@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" 
+			elementFormDefault="qualified" 
+			targetNamespace="http://iaws/ws/contractfirst/projet"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Stations" type="proj:StationsType" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+  <xs:complexType name="stationType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="adresse"/>
+      <xs:element type="xs:int" name="available_bickes"/>
+      <xs:element type="xs:string" name="name"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StationsType">
+    <xs:sequence>
+      <xs:element type="proj:Stations_Avec_VelosType" name="Stations_Avec_Velos" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="ville"/>
+  </xs:complexType>
+  <xs:complexType name="Stations_Avec_VelosType">
+    <xs:sequence>
+      <xs:element type="proj:stationType" name="station" maxOccurs="unbounded" minOccurs="0" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="UserStory1ARequest" type="proj:UserStory1ARequestType" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+
+    <xs:complexType name="UserStory1ARequestType">
+        <xs:all>
+            <xs:element type="xs:int" name="DepNumero"/>
+            <xs:element type="xs:string" name="DepRue"/>
+            <xs:element type="xs:int" name="DepCodePostal"/>
+            <xs:element type="xs:string" name="DepVille"/>
+            <xs:element type="xs:string" name="DepPays"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

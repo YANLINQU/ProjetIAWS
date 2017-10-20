@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Stations xmlns="http://iaws/ws/contractfirst/projet" ville="Toulouse">
+    <Stations_Avec_Velos>
+        <station>
+            <adresse>118  RTE DE NARBONNE</adresse>
+            <available_bickes>2</available_bickes>
+            <name>00227 - METRO UPS</name>
+        </station>
+        <station>
+            <adresse>AVENUE DU COLONEL ROCHE</adresse>
+            <available_bickes>1</available_bickes>
+            <name>00222 - CAMBOU / ROCHE</name>
+        </station>
+        <station>
+            <adresse>141 AV DE RANGUEIL</adresse>
+            <available_bickes>5</available_bickes>
+            <name>00230 - RANGUEIL TRIPODE B</name>
+        </station>
+    </Stations_Avec_Velos>
+</Stations>

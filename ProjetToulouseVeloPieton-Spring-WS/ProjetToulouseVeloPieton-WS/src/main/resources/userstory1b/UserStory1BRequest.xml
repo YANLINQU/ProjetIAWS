@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<UserStory1BRequest xmlns="http://iaws/ws/contractfirst/projet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://iaws/ws/contractfirst/projet">
+    <DepNumero>118</DepNumero>
+    <DepRue>Route de Narbonne</DepRue>
+    <DepCodePostal>31062</DepCodePostal>
+    <DepVille>Toulouse</DepVille>
+    <DepPays>France</DepPays>
+</UserStory1BRequest>

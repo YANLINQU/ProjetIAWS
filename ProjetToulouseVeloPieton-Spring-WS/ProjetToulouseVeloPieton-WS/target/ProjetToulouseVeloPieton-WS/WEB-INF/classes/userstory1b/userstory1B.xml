@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Stations xmlns="http://iaws/ws/contractfirst/projet" ville="Toulouse">
+    <Stations_Avec_Places>
+        <station>
+            <adresse>RANGUEIL / CL ROCHE</adresse>
+            <available_bike_stands>20</available_bike_stands>
+            <name>00231 - NARBONNE MARFAING</name>
+        </station>
+        <station>
+            <adresse>118  RTE DE NARBONNE</adresse>
+            <available_bike_stands>18</available_bike_stands>
+            <name>00227 - METRO UPS</name>
+        </station>
+        <station>
+            <adresse>AVENUE DU COLONEL ROCHE</adresse>
+            <available_bike_stands>19</available_bike_stands>
+            <name>00222 - CAMBOU / ROCHE</name>
+        </station>
+    </Stations_Avec_Places>
+</Stations>

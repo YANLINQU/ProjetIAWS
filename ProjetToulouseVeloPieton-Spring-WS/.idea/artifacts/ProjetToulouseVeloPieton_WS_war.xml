@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ProjetToulouseVeloPieton-WS:war">
+    <output-path>$PROJECT_DIR$/ProjetToulouseVeloPieton-WS/target</output-path>
+    <root id="archive" name="ProjetToulouseVeloPieton-WS.war">
+      <element id="artifact" artifact-name="ProjetToulouseVeloPieton-WS:war exploded" />
+    </root>
+  </artifact>
+</component>

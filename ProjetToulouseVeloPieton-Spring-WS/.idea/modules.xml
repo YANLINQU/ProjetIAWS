@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProjetToulouseVeloPieton/ProjetToulouseVeloPieton.iml" filepath="$PROJECT_DIR$/ProjetToulouseVeloPieton/ProjetToulouseVeloPieton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetToulouseVeloPieton-Spring-WS.iml" filepath="$PROJECT_DIR$/ProjetToulouseVeloPieton-Spring-WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetToulouseVeloPieton-WS/ProjetToulouseVeloPieton-WS.iml" filepath="$PROJECT_DIR$/ProjetToulouseVeloPieton-WS/ProjetToulouseVeloPieton-WS.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" 
+			elementFormDefault="qualified" 
+			targetNamespace="http://iaws/ws/contractfirst/projet"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Trajet_Pied" type="proj:Trajet_PiedType" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+  <xs:complexType name="Trajet_PiedType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="adresse_depart"/>
+      <xs:element type="xs:string" name="adresse_arrivee"/>
+      <xs:element type="xs:string" name="temps"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="UserStory3Request" type="proj:UserStory3RequestType" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+
+    <xs:complexType name="UserStory3RequestType">
+        <xs:all>
+            <xs:element type="xs:int" name="DepNumero"/>
+            <xs:element type="xs:string" name="DepRue"/>
+            <xs:element type="xs:int" name="DepCodePostal"/>
+            <xs:element type="xs:string" name="DepVille"/>
+            <xs:element type="xs:int" name="ArrNumero"/>
+            <xs:element type="xs:string" name="ArrRue"/>
+            <xs:element type="xs:int" name="ArrCodePostal"/>
+            <xs:element type="xs:string" name="ArrVille"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

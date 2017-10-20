@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" 
+			elementFormDefault="qualified" 
+			targetNamespace="http://iaws/ws/contractfirst/projet"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Trajet" type="proj:TrajetType" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+  <xs:complexType name="trajet_pied_arrType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="adresse_station_arrivee"/>
+      <xs:element type="xs:string" name="adresse_arrivee"/>
+      <xs:element type="xs:string" name="temps"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Trajet_veloType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="adresse_station_depart"/>
+      <xs:element type="xs:string" name="adresse_station_arrive"/>
+      <xs:element type="xs:string" name="temps"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="trajet_pied_depType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="adresse_depart"/>
+      <xs:element type="xs:string" name="adresse_station_depart"/>
+      <xs:element type="xs:string" name="temps"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Trajet_piedsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="temps"/>
+      <xs:element type="proj:trajet_pied_depType" name="trajet_pied_dep" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+      <xs:element type="proj:trajet_pied_arrType" name="trajet_pied_arr" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TrajetType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="tempstotal"/>
+      <xs:element type="proj:Trajet_piedsType" name="Trajet_pieds" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+      <xs:element type="proj:Trajet_veloType" name="Trajet_velo" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="UserStory4Request" type="proj:UserStory4RequestType" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+
+    <xs:complexType name="UserStory4RequestType">
+        <xs:all>
+            <xs:element type="xs:int" name="DepNumero"/>
+            <xs:element type="xs:string" name="DepRue"/>
+            <xs:element type="xs:int" name="DepCodePostal"/>
+            <xs:element type="xs:string" name="DepVille"/>
+            <xs:element type="xs:int" name="ArrNumero"/>
+            <xs:element type="xs:string" name="ArrRue"/>
+            <xs:element type="xs:int" name="ArrCodePostal"/>
+            <xs:element type="xs:string" name="ArrVille"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

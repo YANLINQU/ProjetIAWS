@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Trajet_Pied xmlns="http://iaws/ws/contractfirst/projet">
+    <adresse_depart>31 Rue Valade, 31000 Toulouse</adresse_depart>
+    <adresse_arrivee>24 Rue Louis Eydoux, 31400 Toulouse</adresse_arrivee>
+    <temps>1h:1mn</temps>
+</Trajet_Pied>

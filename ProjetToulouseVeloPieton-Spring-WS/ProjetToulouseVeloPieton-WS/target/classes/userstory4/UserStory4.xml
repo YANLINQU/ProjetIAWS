@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Trajet xmlns="http://iaws/ws/contractfirst/projet">
+    <tempstotal>77h:24mn</tempstotal>
+    <Trajet_pieds>
+        <temps>61h:58mn</temps>
+        <trajet_pied_dep>
+            <adresse_depart>31 Rue Valade, 31000 Toulouse</adresse_depart>
+            <adresse_station_depart>31 RUE VALADE</adresse_station_depart>
+            <temps>61h:54mn</temps>
+        </trajet_pied_dep>
+        <trajet_pied_arr>
+            <adresse_station_arrivee>21 AV DES ECOLES JULES JULIEN</adresse_station_arrivee>
+            <adresse_arrivee>24 Rue Louis Eydoux, 31400 Toulouse</adresse_arrivee>
+            <temps>0h:4mn</temps>
+        </trajet_pied_arr>
+    </Trajet_pieds>
+    <Trajet_velo>
+        <adresse_station_depart>31 RUE VALADE</adresse_station_depart>
+        <adresse_station_arrive>21 AV DES ECOLES JULES JULIEN</adresse_station_arrive>
+        <temps>15h:26mn</temps>
+    </Trajet_velo>
+</Trajet>

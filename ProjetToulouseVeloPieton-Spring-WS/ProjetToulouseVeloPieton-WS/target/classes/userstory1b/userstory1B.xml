@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Stations xmlns="http://iaws/ws/contractfirst/projet" ville="Toulouse">
+    <Stations_Avec_Places>
+        <station>
+            <adresse>AVENUE EDOUARD BELIN FACE CNRS</adresse>
+            <available_bike_stands>20</available_bike_stands>
+            <name>00237 - CNRS</name>
+        </station>
+        <station>
+            <adresse>AVENUE EDOUARD BELIN ANGLE AV ROCHE</adresse>
+            <available_bike_stands>19</available_bike_stands>
+            <name>00223 - ENAC</name>
+        </station>
+        <station>
+            <adresse>9 RUE LE DORMEUR</adresse>
+            <available_bike_stands>16</available_bike_stands>
+            <name>00211 - LE DORMEUR/ LA TERRASSE</name>
+        </station>
+    </Stations_Avec_Places>
+</Stations>

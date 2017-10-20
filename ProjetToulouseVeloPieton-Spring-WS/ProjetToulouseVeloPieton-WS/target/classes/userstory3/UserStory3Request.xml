@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<UserStory3Request xmlns="http://iaws/ws/contractfirst/projet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://iaws/ws/contractfirst/projet">
+    <DepNumero>31</DepNumero>
+    <DepRue>Rue Valade</DepRue>
+    <DepCodePostal>31000</DepCodePostal>
+    <DepVille>Toulouse</DepVille>
+   
+    <ArrNumero>24</ArrNumero>
+    <ArrRue>Rue Louis Eydoux</ArrRue>
+    <ArrCodePostal>31400</ArrCodePostal>
+    <ArrVille>Toulouse</ArrVille>
+
+</UserStory3Request>

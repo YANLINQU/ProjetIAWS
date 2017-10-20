@@ -1,0 +1,8 @@
+org\ProjetToulouseVeloPieton\object2XML\Object2Xml.class
+org\ProjetToulouseVeloPieton\WS\ProjetToulouseVeloPietonEndpoint.class
+org\ProjetToulouseVeloPieton\WS\XmlHelper.class
+org\ProjetToulouseVeloPieton\arcGIS\JsonContentTypeResponseFilter.class
+org\ProjetToulouseVeloPieton\jCDecaux\JCDecaux.class
+org\ProjetToulouseVeloPieton\arcGIS\ArcGIS.class
+org\ProjetToulouseVeloPieton\openStreetMap\OpenStreetMap.class
+org\ProjetToulouseVeloPieton\openWeatherMap\OpenWeatherMap.class

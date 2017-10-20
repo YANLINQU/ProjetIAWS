@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://iaws/ws/contractfirst/projet" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://iaws/ws/contractfirst/projet" targetNamespace="http://iaws/ws/contractfirst/projet">
+  <wsdl:types>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://iaws/ws/contractfirst/projet">
+  <xs:element xmlns:proj="http://iaws/ws/contractfirst/projet" name="Trajet" type="proj:TrajetType"/>
+  <xs:complexType name="trajet_pied_arrType">
+    <xs:sequence>
+      <xs:element name="adresse_station_arrivee" type="xs:string"/>
+      <xs:element name="adresse_arrivee" type="xs:string"/>
+      <xs:element name="temps" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Trajet_veloType">
+    <xs:sequence>
+      <xs:element name="adresse_station_depart" type="xs:string"/>
+      <xs:element name="adresse_station_arrive" type="xs:string"/>
+      <xs:element name="temps" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="trajet_pied_depType">
+    <xs:sequence>
+      <xs:element name="adresse_depart" type="xs:string"/>
+      <xs:element name="adresse_station_depart" type="xs:string"/>
+      <xs:element name="temps" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Trajet_piedsType">
+    <xs:sequence>
+      <xs:element name="temps" type="xs:string"/>
+      <xs:element xmlns:proj="http://iaws/ws/contractfirst/projet" name="trajet_pied_dep" type="proj:trajet_pied_depType"/>
+      <xs:element xmlns:proj="http://iaws/ws/contractfirst/projet" name="trajet_pied_arr" type="proj:trajet_pied_arrType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TrajetType">
+    <xs:sequence>
+      <xs:element name="tempstotal" type="xs:string"/>
+      <xs:element xmlns:proj="http://iaws/ws/contractfirst/projet" name="Trajet_pieds" type="proj:Trajet_piedsType"/>
+      <xs:element xmlns:proj="http://iaws/ws/contractfirst/projet" name="Trajet_velo" type="proj:Trajet_veloType"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element xmlns:proj="http://iaws/ws/contractfirst/projet" name="UserStory4Request" type="proj:UserStory4RequestType"/>
+
+    <xs:complexType name="UserStory4RequestType">
+        <xs:all>
+            <xs:element name="DepNumero" type="xs:int"/>
+            <xs:element name="DepRue" type="xs:string"/>
+            <xs:element name="DepCodePostal" type="xs:int"/>
+            <xs:element name="DepVille" type="xs:string"/>
+            <xs:element name="ArrNumero" type="xs:int"/>
+            <xs:element name="ArrRue" type="xs:string"/>
+            <xs:element name="ArrCodePostal" type="xs:int"/>
+            <xs:element name="ArrVille" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="UserStory4Request">
+    <wsdl:part element="tns:UserStory4Request" name="UserStory4Request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ProjetPieton">
+    <wsdl:operation name="UserStory4">
+      <wsdl:input message="tns:UserStory4Request" name="UserStory4Request">
+    </wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProjetPietonSoap11" type="tns:ProjetPieton">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="UserStory4">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="UserStory4Request">
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProjetPietonService">
+    <wsdl:port binding="tns:ProjetPietonSoap11" name="ProjetPietonSoap11">
+      <soap:address location="http://localhost:8080/ProjetToulouseVeloPieton-WS/projet"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

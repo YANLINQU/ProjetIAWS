@@ -1,0 +1,5 @@
+org\ProjetToulouseVeloPieton\jCDecaux\JCDecauxTest.class
+org\ProjetToulouseVeloPieton\openStreetMap\OpenStreetMapTest.class
+org\ProjetToulouseVeloPieton\WS\TestIntegrationProjetToulouseVeloPietonEndPoint.class
+org\ProjetToulouseVeloPieton\arcGIS\ArcGISTest.class
+org\ProjetToulouseVeloPieton\openWeatherMap\OpenWeatherMapTest.class

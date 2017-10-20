@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:sws="http://www.springframework.org/schema/web-services"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/web-services http://www.springframework.org/schema/web-services/web-services-2.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <sws:annotation-driven/>
+    <context:component-scan base-package="org.ProjetToulouseVeloPieton.WS"/>
+
+	<bean id="object2xml" class="org.ProjetToulouseVeloPieton.object2XML.Object2Xml" />
+	<bean id="jcdecaux" class="org.ProjetToulouseVeloPieton.jCDecaux.JCDecaux" />	
+	<bean id="openweathermap" class="org.ProjetToulouseVeloPieton.openWeatherMap.OpenWeatherMap"/>
+	<bean id="objectfactoryuserstory1a" class="org.ProjetToulouseVeloPieton.bean.userstory1a.ObjectFactoryUserStory1A"/>
+	<bean id="objectfactoryuserstory1b" class="org.ProjetToulouseVeloPieton.bean.userstory1b.ObjectFactoryUserStory1B"/>
+	<bean id="objectfactoryuserstory2" class="org.ProjetToulouseVeloPieton.bean.userstory2.ObjectFactoryUserStory2"/>
+	<bean id="objectfactoryuserstory3" class="org.ProjetToulouseVeloPieton.bean.userstory3.ObjectFactoryUserStory3"/>
+	<bean id="objectfactoryuserstory4" class="org.ProjetToulouseVeloPieton.bean.userstory4.ObjectFactoryUserStory4"/>
+	
+</beans>

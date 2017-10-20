@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Meteo xmlns="http://iaws/ws/contractfirst/projet">
+    <adresse>118 Route de Narbonne, 31062 Toulouse</adresse>
+    <chausse_mouillee>non</chausse_mouillee>
+    <humidite>55</humidite>
+    <precipitation>no</precipitation>
+</Meteo>

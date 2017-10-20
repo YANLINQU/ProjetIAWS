@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" 
+			elementFormDefault="qualified" 
+			targetNamespace="http://iaws/ws/contractfirst/projet"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Meteo" type="proj:MeteoType" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+  <xs:complexType name="MeteoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="adresse"/>
+      <xs:element type="xs:string" name="chausse_mouillee"/>
+      <xs:element type="xs:string" name="humidite"/>
+      <xs:element type="xs:string" name="precipitation"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="UserStory2Request" type="proj:UserStory2RequestType" xmlns:proj="http://iaws/ws/contractfirst/projet"/>
+
+    <xs:complexType name="UserStory2RequestType">
+        <xs:all>
+            <xs:element type="xs:int" name="DepNumero"/>
+            <xs:element type="xs:string" name="DepRue"/>
+            <xs:element type="xs:int" name="DepCodePostal"/>
+            <xs:element type="xs:string" name="DepVille"/>
+            <xs:element type="xs:string" name="DepPays"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>
